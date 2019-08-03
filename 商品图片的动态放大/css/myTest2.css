@@ -1,0 +1,20 @@
+body{
+	padding: 150px 400px;
+}
+#ad img{
+    border: 1px solid gray;
+}
+.bigImg{
+    width: 0px; /* 在js里动态设置 w = 400*/
+    height: 0px;/* h = 320 */
+    padding: 10px;
+	background-color:gray;
+    position: absolute;
+    overflow: hidden;
+}
+.bigImg p {
+    font-size: 16px;
+	height: 28px;
+    line-height: 28px;
+	color: white;
+}

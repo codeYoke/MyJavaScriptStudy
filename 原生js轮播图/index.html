@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://www.jsdaima.com/Uploads/js/201803/1520473562/index.html -->
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>原生js实现3D立体效果超级炫酷全屏焦点轮播大图特效插件</title>
+        <meta name="keywords" content="原生js实现,3D立体效果,超级炫酷,全屏焦点轮播大图,特效插件">
+        <meta name="description" content="原生js实现3D立体效果超级炫酷全屏焦点轮播大图特效插件下载。这款jQuery 3D 垂直螺旋切换焦点图动画和这款jQuery/CSS3 3D旋转图片切换焦点图插件都非常不错。这次的3D焦点图动画插件是全屏的，效果非常绚丽，整张图片就像悬浮在夜空中一样，切换时还带有丰富的过渡动画效果。基于原生JavaScript开发，简单易用。"> 
+        <meta name="author" content="fjh">
+        <meta name="copyright" content="fjh">
+       <!-- <script type="text/javascript" src="./protect.js"></script> -->
+        <link rel="stylesheet" type="text/css" href="./normalize.css">
+        <link rel="stylesheet" type="text/css" href="./demo.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    
+    <body>
+        <div class="slider" id="slider" style="--img-prev:url(https\:\/\/www\.jsdaima\.com\/Uploads\/js\/201803\/1520473562\/img\/1\.jpg);">
+            <div class="slider__content" id="slider-content" style="transform: translateZ(8.519vw) rotateX(0.353508deg) rotateY(-0.861014deg);">
+                <div class="slider__images">
+                    <div class="slider__images-item slider__images-item--active" data-id="1">
+                        <img src="./ad1.png" style="transform: translateX(0.0861014em) translateY(0.0353508em);">
+                    </div>
+                    <div class="slider__images-item" data-id="2">
+                        <img src="./ad2.png">
+                    </div>
+                    <div class="slider__images-item" data-id="3">
+                        <img src="./ad3.jpg">
+                    </div>
+                    <div class="slider__images-item" data-id="4">
+                        <img src="./ad4.jpg">
+                    </div>
+                    <div class="slider__images-item" data-id="5">
+                        <img src="./ad5.png">
+                    </div>
+					
+                </div>
+                <div class="slider__text">
+                    <div class="slider__text-item slider__text-item--active" data-id="1">
+                        <div class="slider__text-item-head">
+                            <h3>
+                              路飞
+                            </h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>
+                              “ 海贼王我当定了！”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider__text-item" data-id="2">
+                        <div class="slider__text-item-head">
+                            <h3>
+                                路飞
+                            </h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>
+                                “我要连她的那一份也一起变强！”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider__text-item" data-id="3">
+                        <div class="slider__text-item-head">
+                            <h3>
+                                路飞
+                            </h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>
+                                “我不需要伪装，我是海贼的儿子！”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider__text-item" data-id="4">
+                        <div class="slider__text-item-head">
+                            <h3>
+                                路飞
+                            </h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>
+                                “能够原谅女人的谎言才是男人！”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider__text-item" data-id="5">
+                        <div class="slider__text-item-head">
+                            <h3>
+                                路飞
+                            </h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>
+                                “男儿虽裸志不去，勇如雄狮势不虚！”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__nav">
+                <div class="slider__nav-arrows">
+                    <div class="slider__nav-arrow slider__nav-arrow--left" id="left">
+                        to left
+                    </div>
+                    <div class="slider__nav-arrow slider__nav-arrow--right" id="right">
+                        to right
+                    </div>
+                </div>
+                <div class="slider__nav-dots" id="slider-dots">
+                    <div class="slider__nav-dot slider__nav-dot--active" data-id="1">
+                    </div>
+                    <div class="slider__nav-dot" data-id="2">
+                    </div>
+                    <div class="slider__nav-dot" data-id="3">
+                    </div>
+                    <div class="slider__nav-dot" data-id="4">
+                    </div>
+                    <div class="slider__nav-dot" data-id="5">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    
+
+</body></html>

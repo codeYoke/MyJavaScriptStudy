@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>好评</title>
+		<link rel="stylesheet" type="text/css" href="../js7/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myTest3.css"/>
+		<script type="text/javascript">
+			window.onload = function(){
+				ul = document.getElementById('star');
+				lis = ul.getElementsByTagName('li');
+				for (var i = 0; i < lis.length; i++) {
+					lis[i].onclick = function(){
+						//被用户点击后弹框并提示分数
+						//获取当前对象的对象名
+						var className = this.className;//nostart
+						//重新定义class,并弹出评分
+						ul.className = "nostar " + className;
+						var score = this.getElementsByTagName('a')[0].title;
+						console.log(score);
+						alert('评分：' + score);
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<ul class="nostar " id="star">
+			<li class="onestar"><a title="1分"></a></li>
+			<li class="twostar"><a title="2分"></a></li>
+			<li class="threestar"><a title="3分"></a></li>
+			<li class="fourstar"><a title="4分"></a></li>
+			<li class="fivestar"><a title="5分"></a></li>
+		</ul>
+	</body>
+</html>

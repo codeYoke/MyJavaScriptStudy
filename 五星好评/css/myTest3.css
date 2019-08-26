@@ -1,0 +1,45 @@
+body{
+	padding: 200px 600px;
+}
+.nostar{
+	width: 80px;
+	height: 16px;
+	background: url(../img/star-matrix.gif) no-repeat;
+	position: relative;
+}
+
+.nostar li {
+    width: 16px;
+    height: 16px;
+    float: left;
+    
+}
+
+.nostar li a{
+     display: inline-block; 
+    width: 16px;
+    height: 16px; 
+    position: absolute;
+    /* text-indent: -999px; */ 
+    /* 层级关系*/
+     z-index: 10; 
+}
+.nostar li a:hover{
+    /* 将a的大小变化 width 80 */
+    left: 0px;
+    width: 80px;
+    background: url(../img/star-matrix.gif) no-repeat;
+    z-index: 5;
+}
+.onestar{background-position: 0 -16px;}
+.twostar{background-position: 0 -32px;}
+.threestar{background-position: 0 -48px;}
+.fourstar{background-position: 0 -64px;}
+.fivestar{background-position: 0 -80px;}
+
+
+.nostar li.onestar a:hover{ background-position: 0 -96px ;}
+.nostar li.twostar a:hover{ background-position: 0 -112px ;}
+.nostar li.threestar a:hover{ background-position: 0 -128px ;}
+.nostar li.fourstar a:hover{ background-position: 0 -144px ;}
+.nostar li.fivestar a:hover{ background-position: 0 -160px ;}
